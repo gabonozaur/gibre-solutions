@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v1
         with:
-          node-version: '18-lts'
+          node-version: '18.x'
 
       - name: npm install, build, and test
         run: |
@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'gibre-solutions'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_001c5862b63c4997b8911f5a34339c01 }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_d7e91568ed5f4100ae10c31f5b8f3df3 }}
           package: .
